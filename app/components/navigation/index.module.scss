@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+
+  @media (max-width: 768px) {
+    justify-content: flex-end;
+  }
+}
+
+.burger {
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  position: relative;
+  width: 100px;
+  height: 40px;
+  border-radius: 12px;
+  transition: font-size 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: var(--grey);
+  }
+}

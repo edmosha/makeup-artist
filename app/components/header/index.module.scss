@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  background-image: linear-gradient(0.5turn, rgb(1, 1, 1) 34%, rgba(1, 1, 1, 0.5) 76%, rgba(1, 1, 1, 0) 100%);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  z-index: 1;
+
+  & .tg {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--text);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 20px;
+
+    &:hover {
+      background: var(--grey);
+    }
+
+    & img {
+      width: 70px;
+      height: 70px;
+      border-radius: 20px;
+    }
+  }
+
+  & .record {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 40px;
+    border: 1px solid var(--text);
+    padding: 6px 16px;
+
+    &__circle {
+      width: 10px;
+      height: 10px;
+      background-color: var(--accent);
+      border-radius: 50%;
+    }
+  }
+}
