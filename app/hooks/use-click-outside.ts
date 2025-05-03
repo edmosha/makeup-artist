@@ -1,4 +1,4 @@
-import { type MouseEvent, type RefObject, useEffect } from 'react';
+import { type RefObject, useEffect } from 'react';
 
 export const useOnClickOutside = (ref: RefObject<any>, handler: () => void) => {
   useEffect(() => {
