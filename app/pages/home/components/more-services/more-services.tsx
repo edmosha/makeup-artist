@@ -26,6 +26,8 @@ const moreServices: IServiceCardListItem[] = [
   },
 ];
 
+console.log('fix');
+
 export const MoreServices = () => (
   <div className={styles.services}>
     <Typography size='6XL' variant='title' as='h2' className={'title_shadow'}>
