@@ -6,12 +6,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from 'react-router';
+import { Header } from '~/components/header/header';
 
 import type { Route } from './+types/root';
 import './styles/font.css';
 import './styles/variables.css';
 import './app.css';
-import { Header } from '~/components/header/header';
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
