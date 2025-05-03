@@ -1,5 +1,5 @@
 import { Navigation } from '~/components/navigation/navigation';
-import { Typography } from '~/components/Typography';
+import { Typography } from 'app/components/typography';
 import styles from './index.module.scss';
 import Avatar from '../../assets/img/avatar.jpg';
 

@@ -1,0 +1,11 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  & .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

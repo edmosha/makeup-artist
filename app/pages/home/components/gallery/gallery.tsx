@@ -8,7 +8,7 @@ import Work7 from '~/assets/img/work7.jpg';
 import Work8 from '~/assets/img/work8.jpg';
 import Work9 from '~/assets/img/work9.jpg';
 import Work10 from '~/assets/img/work10_cut.jpg';
-import { Typography } from '~/components/Typography';
+import { Typography } from 'app/components/typography';
 import styles from './index.module.scss';
 
 export const Gallery = () => (

@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { Typography } from '~/components/Typography';
+import { Typography } from 'app/components/typography';
 import styles from './index.module.scss';
 
 interface IChipsProps {

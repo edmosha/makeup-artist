@@ -1,0 +1,41 @@
+.card {
+  padding: 16px 24px;
+  border-radius: 20px;
+  background: var(--grey-dark);
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr 1fr;
+  align-items: center;
+  gap: 32px;
+
+  .description {
+    color: var(--grey);
+    padding-right: 32px;
+  }
+
+  .price {
+    white-space: nowrap;
+  }
+
+  .button {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    height: fit-content;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
+    .arrow {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--background);
+    }
+  }
+}
