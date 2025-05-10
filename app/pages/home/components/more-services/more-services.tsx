@@ -6,27 +6,25 @@ import styles from './index.module.scss';
 const moreServices: IServiceCardListItem[] = [
   {
     name: 'Выезд на площадку',
-    description: 'Приеду в любое место и сделаю тебе лучший макияж оффлайн.',
-    price: 'от 1 500 ₽',
+    description: 'Приеду в любое место и сделаю тебе лучший макияж',
+    format: 'Оффлайн',
   },
   {
     name: 'Это база',
-    description: 'Курс об основах макияжа, который идеален для новичков Онлайн',
-    price: 'от 1 500 ₽',
+    description: 'Курс об основах макияжа, который идеален для новичков',
+    format: 'Онлайн',
   },
   {
     name: 'Взгляд кошки',
-    description: 'Smokey eyes, стрелки, в общем всё, что может подчеркнуть взгляд Онлайн',
-    price: 'от 1 500 ₽',
+    description: 'Smokey eyes, стрелки, в общем всё, что может подчеркнуть взгляд',
+    format: 'Онлайн',
   },
   {
     name: 'Две сестры',
-    description: 'Всё о бровях и том, как найти и уложить свою форму Онлайн',
-    price: 'от 1 500 ₽',
+    description: 'Всё о бровях и том, как найти и уложить свою форму',
+    format: 'Онлайн',
   },
 ];
-
-console.log('fix');
 
 export const MoreServices = () => (
   <div className={styles.services}>

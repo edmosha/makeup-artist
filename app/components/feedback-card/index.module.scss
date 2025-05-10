@@ -1,0 +1,30 @@
+.card {
+  padding: 24px;
+  border-radius: 20px;
+  background: var(--grey-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  min-height: 350px;
+  height: 100%;
+  cursor: pointer;
+  margin: 0 8px;
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 5px solid var(--accent);
+    background-color: var(--grey-dark);
+  }
+
+  .text {
+    opacity: .5;
+  }
+
+  .name {
+    margin-top: auto;
+  }
+}

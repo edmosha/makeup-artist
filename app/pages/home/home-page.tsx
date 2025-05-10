@@ -1,8 +1,9 @@
-import { Gallery } from '~/pages/home/components/gallery/gallery';
-import { Services } from '~/pages/home/components/services/services';
-import { MoreServices } from '~/pages/home/components/more-services/more-services';
 import clsx from 'clsx';
-import { Landing } from './components/landing';
+import { Gallery } from './components/gallery/gallery';
+import { Services } from './components/services/services';
+import { MoreServices } from './components/more-services/more-services';
+import { Feedback } from './components/feedback/feedback';
+import { Landing } from './components/landing/landing';
 import styles from './index.module.scss';
 
 export const HomePage = () => (
@@ -11,5 +12,6 @@ export const HomePage = () => (
     <Gallery />
     <Services />
     <MoreServices />
+    <Feedback />
   </div>
 );

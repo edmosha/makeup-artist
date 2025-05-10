@@ -7,6 +7,7 @@ import {
   ScrollRestoration,
 } from 'react-router';
 import { Header } from '~/components/header/header';
+import { Footer } from '~/components/footer/footer';
 
 import type { Route } from './+types/root';
 import './styles/font.css';
@@ -48,7 +49,8 @@ export default function App() {
   return (
     <Layout>
       <Header />
-      <Outlet />;
+      <Outlet />
+      <Footer />
     </Layout>
   );
 }

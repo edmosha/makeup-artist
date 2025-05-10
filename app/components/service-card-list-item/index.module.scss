@@ -1,11 +1,16 @@
 .card {
-  padding: 16px 24px;
+  padding: 32px 24px;
   border-radius: 20px;
-  background: var(--grey-dark);
+  background: var(--grey-dark-2);
   display: grid;
-  grid-template-columns: 2fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr 6fr 2fr 1fr;
   align-items: center;
   gap: 32px;
+  transition: background .5s ease-in;
+
+  &:hover {
+    background: var(--grey-dark);
+  }
 
   .description {
     color: var(--grey);
@@ -16,26 +21,36 @@
     white-space: nowrap;
   }
 
-  .button {
+  .arrowBtn {
     display: flex;
     gap: 16px;
     align-items: center;
-    height: fit-content;
+    justify-content: center;
+    background: var(--grey);
+    color: var(--accent);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+    transition: background .5s ease-in, color .5s ease-in, opacity .5s ease-in;
+  }
 
-    &:hover {
-      text-decoration: underline;
-      text-underline-offset: 5px;
-    }
+  &:hover .arrowBtn {
+    background: var(--accent);
+    color: var(--background);
+    opacity: 1;
+  }
 
-    .arrow {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--background);
-    }
+  .link {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    background: var(--grey);
+    color: var(--accent);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: .5;
   }
 }

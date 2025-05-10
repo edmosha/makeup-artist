@@ -39,6 +39,7 @@
     width: 70%;
     height: 100%;
     object-fit: cover;
+    transform: translateX(50px);
     box-shadow: inset 20px 0 60px rgba(38, 38, 38);
     background:
             linear-gradient(45deg, rgb(38, 38, 38, 1) 7%, rgb(38, 38, 38, .8) 22%, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0)),

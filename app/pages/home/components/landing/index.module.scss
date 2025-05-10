@@ -25,6 +25,10 @@
 
     & .text_accent {
       color: var(--accent);
+
+      & > div {
+        display: inline-block;
+      }
     }
 
     & .chips {

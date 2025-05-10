@@ -1,0 +1,25 @@
+.button {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: fit-content;
+
+  & > p {
+    transition: border-bottom .2s ease-in;
+    border-bottom: 2px solid transparent;
+    padding: 5px 0;
+  }
+
+  &:hover > p {
+    border-bottom: 2px solid var(--text);
+
+  }
+
+  .arrow {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: var(--accent);
+    color: var(--background);
+  }
+}
