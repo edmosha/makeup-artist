@@ -1,0 +1,64 @@
+.card {
+  position: relative;
+  padding: 32px;
+  border-radius: 20px;
+  background: var(--grey-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  min-height: 350px;
+
+  & p, h2 {
+    z-index: 1;
+  }
+
+  .badge {
+    padding: 8px 12px;
+    background: var(--accent);
+    border-radius: 20px;
+    color: var(--background);
+  }
+
+  .description_container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .description {
+    opacity: .5;
+  }
+
+  .description_list {
+    padding-left: 16px;
+    margin: 0;
+
+    & li {
+      margin: 4px 0;
+      opacity: .5;
+    }
+  }
+
+  .price {
+    margin: auto 0 0;
+  }
+
+  .image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(50px);
+    box-shadow: inset 20px 0 60px rgba(38, 38, 38);
+    background:
+            linear-gradient(45deg, rgb(38, 38, 38, 1) 7%, rgb(38, 38, 38, .8) 22%, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0)),
+            linear-gradient(135deg, rgb(38, 38, 38, 1) 7%, rgb(38, 38, 38, .8) 22%, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0));
+  }
+
+  img.image {
+    right: -2px;
+  }
+}

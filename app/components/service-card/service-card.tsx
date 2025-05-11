@@ -1,4 +1,6 @@
 import { Typography } from 'app/components/typography';
+import { useState } from 'react';
+import { SignForm } from '~/components/sign-form/sign-form';
 import type { IServiceCard } from './types';
 import styles from './index.module.scss';
 
@@ -7,13 +9,25 @@ interface IServiceCardProps {
 }
 
 export const ServiceCard = ({ card }: IServiceCardProps) => {
-  const { name, description, price, imgSrc } = card;
+  const { name, description, price, imgSrc, link } = card;
+
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
-    <div className={ styles.card }>
+    <a className={ styles.card } href={ link }>
       <img src={ imgSrc } alt={ name } className={ styles.image }/>
       <div className={ styles.image }/>
-      <button className={ styles.button }>Записаться</button>
+      <button className={ styles.button } onClick={handleOpen}>
+        Записаться
+      </button>
       <Typography variant='title' size='XXL' as='h2'>
         { name }
       </Typography>
@@ -23,6 +37,8 @@ export const ServiceCard = ({ card }: IServiceCardProps) => {
       <Typography variant='title' size='3XL' className={ styles.price }>
         { price }
       </Typography>
-    </div>
+
+      <SignForm open={open} onClose={handleClose}/>
+    </a>
   );
 };

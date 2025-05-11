@@ -4,7 +4,7 @@ import styles from './index.module.scss';
 
 interface ITypographyProps {
   variant?: 'body' | 'title',
-  size?: 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | '3XL' | '4XL' | '6XL'
+  size?: 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | '3XL' | '4XL' | '5XL' | '6XL'
   as?: 'p' | 'h1' | 'h2' | 'h3' | 'span' | 'a'
   children?: ReactNode
   className?: string

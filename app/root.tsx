@@ -49,7 +49,9 @@ export default function App() {
   return (
     <Layout>
       <Header />
-      <Outlet />
+      <div style={{ paddingTop: 120 }}>
+        <Outlet />
+      </div>
       <Footer />
     </Layout>
   );

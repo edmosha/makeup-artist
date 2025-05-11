@@ -24,9 +24,9 @@ export const Navigation = () => {
       </div>
 
       <div className={clsx(styles.menu)}>
-        <NavigationLink to='/cases' label='Кейсы' onClick={closeMenu} />
-        <NavigationLink to='/services' label='Услуги' onClick={closeMenu} />
-        <NavigationLink to='/contacts' label='Контакты' onClick={closeMenu} />
+        <NavigationLink to='/#works' label='Работы' onClick={closeMenu} />
+        <NavigationLink to='/#services' label='Услуги' onClick={closeMenu} />
+        <NavigationLink to='/#contacts' label='Контакты' onClick={closeMenu} />
       </div>
 
       <RightMenu open={isMenuOpen} />

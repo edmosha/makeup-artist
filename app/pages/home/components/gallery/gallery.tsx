@@ -12,7 +12,7 @@ import { Typography } from 'app/components/typography';
 import styles from './index.module.scss';
 
 export const Gallery = () => (
-  <div className={styles.container}>
+  <div className={styles.container} id='works'>
     <Typography size='6XL' variant='title' as='h2' className={'title_shadow'}>
       Работы
     </Typography>

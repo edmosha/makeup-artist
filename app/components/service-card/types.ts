@@ -3,4 +3,5 @@ export interface IServiceCard {
   description: string
   price: string
   imgSrc: string
+  link?: string
 }

@@ -1,0 +1,21 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.photo {
+  position: relative;
+  padding: 0 8px;
+  max-height: 600px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+}

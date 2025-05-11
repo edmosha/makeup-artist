@@ -45,15 +45,9 @@ button {
 }
 
 .title_shadow {
-    background: linear-gradient(90deg, var(--text), var(--background));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.title_shadow_grey {
-    background: linear-gradient(90deg, var(--text), var(--grey-dark-2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    width: fit-content;
+    background: linear-gradient(90deg, var(--text) 0%, var(--grey-dark) 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
 }

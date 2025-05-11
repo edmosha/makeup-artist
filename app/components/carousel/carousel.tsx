@@ -4,36 +4,39 @@ import 'react-multi-carousel/lib/styles.css';
 
 interface ICarouselProps {
   children?: ReactNode;
+  maxItemsDesktop?: number;
 }
 
-const responsive = {
-  desktop: {
-    breakpoint: {
-      max: 3000,
-      min: 1024,
+const getResponsive = (maxItemsDesktop: number) => (
+  {
+    desktop: {
+      breakpoint: {
+        max: 3000,
+        min: 1024,
+      },
+      items: maxItemsDesktop,
+      partialVisibilityGutter: 40,
     },
-    items: 4,
-    partialVisibilityGutter: 40,
-  },
-  mobile: {
-    breakpoint: {
-      max: 464,
-      min: 0,
+    mobile: {
+      breakpoint: {
+        max: 464,
+        min: 0,
+      },
+      items: 1,
+      partialVisibilityGutter: 30,
     },
-    items: 1,
-    partialVisibilityGutter: 30,
-  },
-  tablet: {
-    breakpoint: {
-      max: 1024,
-      min: 464,
+    tablet: {
+      breakpoint: {
+        max: 1024,
+        min: 464,
+      },
+      items: 2,
+      partialVisibilityGutter: 30,
     },
-    items: 2,
-    partialVisibilityGutter: 30,
-  },
-};
+  }
+);
 
-export const Carousel = ({ children }: ICarouselProps) => {
+export const Carousel = ({ children, maxItemsDesktop = 4 }: ICarouselProps) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -44,7 +47,7 @@ export const Carousel = ({ children }: ICarouselProps) => {
 
   return (
     <ReactMultiCarousel
-      responsive={ responsive }
+      responsive={ getResponsive(maxItemsDesktop) }
       additionalTransfrom={ 0 }
       arrows
       autoPlaySpeed={ 3000 }

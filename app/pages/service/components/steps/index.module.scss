@@ -1,13 +1,13 @@
 .services {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
   padding-top: 120px;
   margin-top: -120px;
 
   & .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
   }
 }
