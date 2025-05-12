@@ -4,9 +4,10 @@ import { useState } from 'react';
 import { Typography } from '~/components/typography';
 import clsx from 'clsx';
 import { Check } from 'lucide-react';
+import { InputMask } from '@react-input/mask';
 import styles from './index.module.scss';
 
-interface IFeedbackCardProps {
+interface ISignFormProps {
   open: boolean;
   onClose: () => void;
 }
@@ -21,7 +22,7 @@ interface FormData {
   policy: boolean
 }
 
-export const SignForm = ({ open, onClose }: IFeedbackCardProps) => {
+export const SignForm = ({ open, onClose }: ISignFormProps) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const {
@@ -72,7 +73,10 @@ export const SignForm = ({ open, onClose }: IFeedbackCardProps) => {
             <option value='tg'>Telegram</option>
             <option value='whatsapp'>Whatsapp</option>
           </select>
-          <input
+          <InputMask
+            mask='+7 ___ ___ __ __'
+            replacement='_'
+            showMask
             className={ styles.input }
             placeholder='+7 900 000 00 00'
             { ...register('phone') }
@@ -93,8 +97,6 @@ export const SignForm = ({ open, onClose }: IFeedbackCardProps) => {
             placeholder='Если есть пожелания по макияжу - опиши их'
             { ...register('description') }
           />
-          {/* <div className={ styles.row } /> */ }
-          {/* <div className={ styles.row } /> */ }
           <label className={ styles.checkbox }>
             <input
               type='checkbox'

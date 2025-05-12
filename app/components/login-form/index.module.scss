@@ -12,9 +12,10 @@
 }
 
 .form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
   width: 100%;
 
   & .row {
@@ -34,20 +35,11 @@
   color: var(--background);
   font-family: 'Inter', sans-serif;
   font-size: 14px;
+  width: 100%;
 
   &:focus {
     outline: 3px solid var(--accent);
   }
-
-  &:first-child, &:last-child,  {
-    grid-area:  auto / 1 / auto / 3;
-  }
-}
-
-.textarea {
-  height: 100px;
-  resize: none;
-  grid-area:  auto / 1 / auto / 3;
 }
 
 .submitBtn {
@@ -72,7 +64,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  justify-self: flex-start;
+  align-self: flex-start;
 
   &_input {
     position: absolute;
@@ -107,5 +99,18 @@
 
   &_input:checked ~ &_new > &_check_icon {
     display: block;
+  }
+}
+
+.otp {
+  width: 60px !important;
+  height: 80px;
+  border-radius: 12px;
+  margin: 0 4px;
+  font-family: 'Cygre', sans-serif;
+  font-size: 26px;
+
+  &:focus {
+    outline: 3px solid var(--accent);
   }
 }
