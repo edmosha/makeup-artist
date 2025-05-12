@@ -1,4 +1,4 @@
-import { Typography } from 'app/components/typography';
+import { Typography } from '~/components/typography';
 import { useState } from 'react';
 import { SignForm } from '~/components/sign-form/sign-form';
 import type { IServiceCard } from './types';

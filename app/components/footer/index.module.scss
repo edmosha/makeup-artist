@@ -27,7 +27,7 @@
     transition: background .3s ease-in;
 
     &:hover {
-      background: var(--grey-dark);
+      background: var(--accent);
     }
   }
 
@@ -50,7 +50,7 @@
     cursor: pointer;
 
     &:hover {
-      background: var(--grey);
+      background: var(--accent);
     }
   }
 

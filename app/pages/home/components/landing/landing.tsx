@@ -1,10 +1,10 @@
 import { Chip } from '~/components/chip/chip';
-import { Typography } from 'app/components/typography';
 import Typewriter from 'typewriter-effect';
 import Bg from '~/assets/img/bg.png';
 import { ButtonWithArrow } from '~/components/button-with-arrow/button-with-arrow';
 import { SignForm } from '~/components/sign-form/sign-form';
 import { useState } from 'react';
+import { Typography } from '~/components/typography';
 import styles from './index.module.scss';
 
 const phrases = [

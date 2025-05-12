@@ -1,10 +1,10 @@
-import { Typography } from 'app/components/typography';
-import type { IServiceCard } from '~/components/service-card/types';
 import AllDays from '~/assets/img/service_all_days.jpg';
 import Night from '~/assets/img/service_night.jpg';
 import Wedding from '~/assets/img/service_wedding.jpg';
 import PhotoSession from '~/assets/img/service_photo_session.jpg';
-import { ServiceCard } from '~/components/service-card/service-card';
+import { Typography } from '~/components/typography';
+import type { IServiceCard } from './service-card/types';
+import { ServiceCard } from './service-card/service-card';
 import styles from './index.module.scss';
 
 const services: IServiceCard[] = [

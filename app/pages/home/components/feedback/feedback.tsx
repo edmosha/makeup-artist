@@ -1,7 +1,7 @@
 import { Typography } from '~/components/typography';
-import { FeedbackCard } from '~/components/feedback-card/feedback-card';
 import { Carousel } from '~/components/carousel/carousel';
 import { feedbacks } from './constants';
+import { FeedbackCard } from './feedback-card/feedback-card';
 import styles from './index.module.scss';
 
 export const Feedback = () => (

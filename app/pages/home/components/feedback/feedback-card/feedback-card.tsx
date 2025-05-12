@@ -1,4 +1,4 @@
-import { Typography } from 'app/components/typography';
+import { Typography } from '~/components/typography';
 import type { IFeedback } from './types';
 import styles from './index.module.scss';
 

@@ -27,7 +27,6 @@ $line-heights: (
 );
 
 .typography {
-  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -35,12 +34,14 @@ $line-heights: (
 
   @each $size, $value in $font-sizes {
     &__body__#{$size} {
+      font-family: 'Cygre', sans-serif;
       font-weight: 400;
       font-size: $value;
       line-height: map.get($line-heights, $size);
     }
 
     &__title__#{$size} {
+      font-family: 'MV-Weekend', sans-serif;
       font-weight: 600;
       font-size: $value;
       line-height: map.get($line-heights, $size);

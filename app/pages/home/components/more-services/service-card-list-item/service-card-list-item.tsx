@@ -1,4 +1,4 @@
-import { Typography } from 'app/components/typography';
+import { Typography } from '~/components/typography';
 import { ArrowRight, Link } from 'lucide-react';
 import styles from './index.module.scss';
 import type { IServiceCardListItem } from './types';

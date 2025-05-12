@@ -1,6 +1,6 @@
-import { Typography } from 'app/components/typography';
-import { StepCard } from '~/pages/service/components/step-card/step-card';
+import { Typography } from '~/components/typography';
 import { steps } from './constants';
+import { StepCard } from './step-card/step-card';
 import styles from './index.module.scss';
 
 export const Services = () => (

@@ -1,4 +1,4 @@
-import type { IStepCard } from '../step-card/types';
+import type { IStepCard } from '~/pages/service/components/steps/step-card/types';
 
 export const steps: IStepCard[] = [
   {

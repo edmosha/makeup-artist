@@ -1,6 +1,7 @@
 import { type ReactNode, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
+import { useOnClickOutside } from '~/hooks/use-click-outside';
 import styles from './index.module.scss';
 
 interface IModalProps {
@@ -12,22 +13,7 @@ interface IModalProps {
 export const Modal = ({ children, open, onClose }: IModalProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
 
-  const handleClickOutside = (e: MouseEvent) => {
-    if (!wrapperRef || !wrapperRef.current) return;
-
-    if (wrapperRef.current.contains(e.target as HTMLElement)) {
-      onClose();
-    }
-
-  };
-
-  useEffect(() => {
-    document.addEventListener('click', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('click', handleClickOutside);
-    };
-  }, [wrapperRef]);
+  useOnClickOutside(wrapperRef, onClose);
 
   if (!open) return null;
 

@@ -4,7 +4,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('./inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./Inter/inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-500 - latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url('./inter-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./Inter/inter-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-600 - latin */
 @font-face {
@@ -20,5 +20,44 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src: url('./inter-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./Inter/inter-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Cygre */
+@font-face {
+  font-display: swap;
+  font-family: 'Cygre';
+  font-style: normal;
+  font-weight: 200;
+  src: url('./Cygre/Cygre-Book.ttf') format('truetype');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Cygre';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./Cygre/Cygre-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Cygre';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./Cygre/Cygre-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Cygre';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./Cygre/Cygre-SemiBold.ttf') format('truetype');
+}
+
+/* MV-Weekend */
+@font-face {
+  font-display: swap;
+  font-family: 'MV-Weekend';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./MW-Weekend/MV-WEEKEND.otf') format('opentype');
 }

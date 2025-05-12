@@ -1,6 +1,6 @@
-import { Typography } from 'app/components/typography';
-import { ServiceCardListItem } from '~/components/service-card-list-item/service-card-list-item';
-import type { IServiceCardListItem } from '~/components/service-card-list-item/types';
+import { Typography } from '~/components/typography';
+import { ServiceCardListItem } from './service-card-list-item/service-card-list-item';
+import type { IServiceCardListItem } from './service-card-list-item/types';
 import styles from './index.module.scss';
 
 const moreServices: IServiceCardListItem[] = [
