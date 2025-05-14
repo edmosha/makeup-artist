@@ -2,7 +2,7 @@ import { Navigation } from '~/components/navigation/navigation';
 import { Typography } from '~/components/typography';
 import { LoginForm } from '~/components/login-form/login-form';
 import { useState } from 'react';
-import { useAuth } from '~/shared/AuthContex';
+import { useAuth } from '~/shared/context/AuthContex';
 import { CircleUserRound } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import styles from './index.module.scss';
@@ -24,17 +24,28 @@ export const Header = () => {
   const renderProfile = () => {
     if (!isAuth) {
       return (
-        <button className={ styles.login } onClick={ handleOpen }>
-          <Typography size='L'>
-            Войти
-          </Typography>
-        </button>
+        <>
+          <button className={ styles.login } onClick={ handleOpen }>
+            <Typography size='L'>
+              Войти
+            </Typography>
+          </button>
+          <div className={ styles.record }>
+            <div className={ styles.record__circle }/>
+            <Typography size='M' variant='title'>
+              Ведется запись <br/>на июнь
+            </Typography>
+          </div>
+        </>
       );
     }
 
+    const userName = localStorage.getItem('userName') || 'Елизавета';
+
     return (
       <Link to='/profile' className={ styles.profile }>
-        <CircleUserRound size={46} strokeWidth={0.5} />
+        <CircleUserRound size={24} strokeWidth={1} />
+        <Typography size='L'>{userName}</Typography>
       </Link>
     );
   };
@@ -48,12 +59,6 @@ export const Header = () => {
       <Navigation />
       <div className={styles.right_block}>
         { renderProfile() }
-        <div className={ styles.record }>
-          <div className={ styles.record__circle }/>
-          <Typography size='M' variant='title'>
-            Ведется запись <br/>на июнь
-          </Typography>
-        </div>
       </div>
 
       <LoginForm open={openLogin} onClose={handleClose} />

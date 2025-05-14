@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+  flex-direction: column;
+
+  & > h2 {
+    margin-bottom: 64px;
+  }
+}
+
+.block_with_photo {
+  display: flex;
+
+  & > img {
+    width: 30%;
+    object-fit: contain;
+    border-radius: 24px;
+    margin: 32px 0 0 32px;
+  }
+}
+
+.content_column {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.why_me {
+  color: var(--grey);
+  line-height: 32px;
+
+  & > b {
+    font-weight: 600;
+    color: var(--text);
+    opacity: .8;
+  }
+}

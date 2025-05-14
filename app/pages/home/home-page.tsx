@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { About } from '~/pages/home/components/about/about';
 import { Gallery } from './components/gallery/gallery';
 import { Services } from './components/services/services';
 import { MoreServices } from './components/more-services/more-services';
@@ -12,6 +13,7 @@ export const HomePage = () => (
     <Gallery />
     <Services />
     <MoreServices />
+    <About />
     <Feedback />
   </div>
 );

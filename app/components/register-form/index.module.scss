@@ -42,7 +42,7 @@
   }
 }
 
-.submit {
+.submitBtn {
   grid-area:  auto / 1 / auto / 3;
   display: flex;
   justify-content: center;
@@ -112,24 +112,5 @@
 
   &:focus {
     outline: 3px solid var(--accent);
-  }
-}
-
-.actions {
-  display: flex;
-  flex-direction: column;
-  gap: 8px
-}
-
-.register {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  padding: 6px;
-  color: var(--text);
-
-  & > span:last-of-type {
-    text-decoration: underline;
-    text-underline-offset: 4px;
   }
 }

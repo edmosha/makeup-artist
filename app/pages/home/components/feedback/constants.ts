@@ -1,5 +1,5 @@
 import Avatar from '~/assets/img/avatar_template.jpg';
-import type { IFeedback } from '~/components/feedback-card/types';
+import type { IFeedback } from './feedback-card/types';
 
 export const feedbacks: IFeedback[] = [
   {

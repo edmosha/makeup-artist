@@ -1,4 +1,4 @@
-import { type ReactNode, useRef, useEffect } from 'react';
+import { type ReactNode, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
 import { useOnClickOutside } from '~/hooks/use-click-outside';

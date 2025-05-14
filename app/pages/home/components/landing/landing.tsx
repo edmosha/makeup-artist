@@ -1,6 +1,6 @@
 import { Chip } from '~/components/chip/chip';
 import Typewriter from 'typewriter-effect';
-import Bg from '~/assets/img/bg.png';
+import Bg from '~/assets/img/bg2.png';
 import { ButtonWithArrow } from '~/components/button-with-arrow/button-with-arrow';
 import { SignForm } from '~/components/sign-form/sign-form';
 import { useState } from 'react';

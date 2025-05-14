@@ -1,0 +1,16 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  & .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+.text {
+  font-weight: 200;
+  opacity: .5;
+}

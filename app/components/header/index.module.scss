@@ -38,6 +38,12 @@
 
   & .profile {
     display: flex;
+    align-items: center;
+    gap: 8px;
+
+    & > p {
+      padding-bottom: 4px;
+    }
   }
 
   & .login {

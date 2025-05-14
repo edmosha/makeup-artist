@@ -6,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from 'react-router';
+import { AuthProvider } from '~/shared/context/AuthContex';
 import { Header } from '~/components/header/header';
 import { Footer } from '~/components/footer/footer';
 
@@ -13,7 +14,6 @@ import type { Route } from './+types/root';
 import './styles/font.css';
 import './styles/variables.css';
 import './app.css';
-import { AuthProvider } from '~/shared/AuthContex';
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -51,7 +51,7 @@ export default function App() {
     <AuthProvider>
       <Layout>
         <Header />
-        <div style={{ paddingTop: 120 }}>
+        <div className={'page'}>
           <Outlet />
         </div>
         <Footer />

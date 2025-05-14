@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import type { ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import styles from './index.module.scss';
 
 interface ITypographyProps {
@@ -8,6 +8,7 @@ interface ITypographyProps {
   as?: 'p' | 'h1' | 'h2' | 'h3' | 'span' | 'a'
   children?: ReactNode
   className?: string
+  style?: CSSProperties
   onClick?: () => void
 }
 
@@ -17,11 +18,13 @@ export const Typography = ({
   as: Component = 'p',
   children,
   className,
+  style,
   onClick,
 }: ITypographyProps) => (
   <Component
     className={clsx(styles.typography, styles[`typography__${variant}__${size}`], className)}
     onClick={onClick}
+    style={style}
   >
     {children}
   </Component>
