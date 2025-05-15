@@ -13,6 +13,7 @@ const moreServices: IServiceCardListItem[] = [
     name: 'Это база',
     description: 'Курс об основах макияжа, который идеален для новичков',
     format: 'Онлайн',
+    link: '/base',
   },
   {
     name: 'Взгляд кошки',

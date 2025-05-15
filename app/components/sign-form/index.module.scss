@@ -23,7 +23,6 @@
   }
 }
 
-
 .input {
   flex: 1 1 auto;
   height: 56px;
@@ -42,6 +41,10 @@
   &:first-child, &:last-child,  {
     grid-area:  auto / 1 / auto / 3;
   }
+}
+
+select:last-of-type {
+  grid-area:  auto / 1 / auto / 3;
 }
 
 .textarea {

@@ -36,14 +36,14 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 70%;
     height: 100%;
-    object-fit: cover;
-    transform: translateX(50px);
-    box-shadow: inset 20px 0 60px rgba(38, 38, 38);
+    object-fit: contain;
+    width: 350px;
+    transform: translateX(20px);
+    box-shadow: inset 30px 0 50px rgb(38, 38, 38);
     background:
-            linear-gradient(45deg, rgb(38, 38, 38, 1) 7%, rgb(38, 38, 38, .8) 22%, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0)),
-            linear-gradient(135deg, rgb(38, 38, 38, 1) 7%, rgb(38, 38, 38, .8) 22%, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0));
+            linear-gradient(75deg, rgb(38, 38, 38, 1) 7%, rgb(38, 38, 38, .8) 15%, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 100%),
+            linear-gradient(105deg, rgb(38, 38, 38, 1) 7%, rgb(38, 38, 38, .8) 15%, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 100%);
   }
 
   img.image {

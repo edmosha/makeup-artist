@@ -8,10 +8,10 @@ interface IServiceCardProps {
 }
 
 export const ServiceCardListItem = ({ card }: IServiceCardProps) => {
-  const { name, description, format } = card;
+  const { name, description, format, link } = card;
 
   return (
-    <div className={ styles.card }>
+    <a className={ styles.card } href={ link }>
       <div className={ styles.link }>
         <Link/>
       </div>
@@ -27,6 +27,6 @@ export const ServiceCardListItem = ({ card }: IServiceCardProps) => {
       <div className={ styles.arrowBtn }>
         <ArrowRight/>
       </div>
-    </div>
+    </a>
   );
 };

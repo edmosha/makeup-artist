@@ -5,7 +5,7 @@ import { FeedbackCard } from './feedback-card/feedback-card';
 import styles from './index.module.scss';
 
 export const Feedback = () => (
-  <div className={styles.feedbacks}>
+  <div className={styles.feedbacks} id='feedback'>
     <Typography size='6XL' variant='title' as='h2' className={'title_shadow'}>
       Отзывы
     </Typography>

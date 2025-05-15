@@ -27,12 +27,16 @@
       width: 70px;
       height: 70px;
       border-radius: 20px;
+      object-fit: cover;
+      object-position: top center;
     }
   }
 
   & .right_block {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    min-width: 209px;
     gap: 16px;
   }
 

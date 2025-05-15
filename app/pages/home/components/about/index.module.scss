@@ -1,6 +1,8 @@
 .about {
   display: flex;
   flex-direction: column;
+  padding-top: 120px;
+  margin-top: -120px;
 
   & > h2 {
     margin-bottom: 64px;

@@ -41,7 +41,7 @@ $line-heights: (
     }
 
     &__title__#{$size} {
-      font-family: 'MV-Weekend', sans-serif;
+      font-family: 'Cygre', sans-serif;
       font-weight: 600;
       font-size: $value;
       line-height: map.get($line-heights, $size);

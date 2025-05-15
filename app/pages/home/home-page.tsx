@@ -1,9 +1,9 @@
 import clsx from 'clsx';
 import { About } from '~/pages/home/components/about/about';
+import { Feedback } from '~/components/feedback/feedback';
 import { Gallery } from './components/gallery/gallery';
 import { Services } from './components/services/services';
 import { MoreServices } from './components/more-services/more-services';
-import { Feedback } from './components/feedback/feedback';
 import { Landing } from './components/landing/landing';
 import styles from './index.module.scss';
 

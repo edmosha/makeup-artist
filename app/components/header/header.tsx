@@ -6,7 +6,7 @@ import { useAuth } from '~/shared/context/AuthContex';
 import { CircleUserRound } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import styles from './index.module.scss';
-import Avatar from '../../assets/img/avatar.jpg';
+import Avatar from '../../assets/img/about.jpg';
 
 export const Header = () => {
   const [openLogin, setOpenLogin] = useState(false);

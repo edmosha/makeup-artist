@@ -4,7 +4,7 @@ import Me from '~/assets/img/about.jpg';
 import styles from './index.module.scss';
 
 export const About = () => (
-  <div className={styles.about}>
+  <div className={styles.about} id='about'>
     <Typography size='6XL' variant='title' as='h2' className={'title_shadow'}>
       Обо мне
     </Typography>

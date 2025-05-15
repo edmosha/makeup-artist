@@ -1,18 +1,22 @@
 import { Typography } from '~/components/typography';
-import { steps } from './constants';
 import { StepCard } from './step-card/step-card';
+import type { IStepCard } from './step-card/types';
 import styles from './index.module.scss';
 
-export const Services = () => (
+interface IStepsProps {
+  items: IStepCard[]
+  title: string
+}
+
+export const Steps = ({ items, title }: IStepsProps) => (
   <div className={styles.services} id='services'>
     <Typography size='5XL' variant='title' as='h2' className={'title_shadow'}>
-      Что входит в услугу свадебного макияжа?
+      {title}
     </Typography>
     <div className={styles.cards}>
-      {steps.map((step, index) => (
+      {items.map((step, index) => (
         <StepCard key={index} card={step} />
       ))}
     </div>
-
   </div>
 );

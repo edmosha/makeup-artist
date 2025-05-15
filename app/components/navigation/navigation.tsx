@@ -27,6 +27,8 @@ export const Navigation = () => {
         <NavigationLink to='/#' label='Главная' onClick={closeMenu} />
         <NavigationLink to='/#works' label='Работы' onClick={closeMenu} />
         <NavigationLink to='/#services' label='Услуги' onClick={closeMenu} />
+        <NavigationLink to='/#about' label='Обо мне' onClick={closeMenu} />
+        <NavigationLink to='/#feedback' label='Отзывы' onClick={closeMenu} />
         <NavigationLink to='/#contacts' label='Контакты' onClick={closeMenu} />
       </div>
 

@@ -18,6 +18,7 @@ interface FormData {
   variant: string
   date: Date
   place: string
+  service: string
   description: string
   policy: boolean
 }
@@ -92,6 +93,19 @@ export const SignForm = ({ open, onClose }: ISignFormProps) => {
             placeholder='Место'
             { ...register('place') }
           />
+          <select
+            className={ styles.input }
+            defaultValue='1'
+            { ...register('service') }
+          >
+            <option value='1'>Ежедневный макияж</option>
+            <option value='2'>Свадебный макияж</option>
+            <option value='3'>Вечерний макияж</option>
+            <option value='4'>Съемочный макияж</option>
+            <option value='5'>Курс «Это база»</option>
+            <option value='6'>Курс «Взгляд кошки»</option>
+            <option value='7'>Курс «Две сестры»</option>
+          </select>
           <textarea
             className={ clsx(styles.input, styles.textarea) }
             placeholder='Если есть пожелания по макияжу - опиши их'
@@ -107,7 +121,7 @@ export const SignForm = ({ open, onClose }: ISignFormProps) => {
               <Check className={ styles.checkbox_check_icon }/>
             </span>
             <Typography as='span'>
-              Согласен с&nbsp;
+              Согласна с&nbsp;
               <Typography as='span' className={ styles.link }>
                 политикой обработки персональных данных
               </Typography>
@@ -125,7 +139,7 @@ export const SignForm = ({ open, onClose }: ISignFormProps) => {
 
   return (
     <Modal open={ open } onClose={ onClose }>
-      {renderBody()}
+      { renderBody() }
     </Modal>
   );
 };
